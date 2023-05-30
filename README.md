@@ -64,6 +64,13 @@ As a returning customer I want:
 
 ## Wireframes
 
+Coasters/Other items/Seasonal page: 
+
+<img src="wireframes/coasterspage.jpg" width="400px">
+
+Home page:
+
+<img src="wireframes/homepage.jpg" width="400px">
 
 ## Features
 
