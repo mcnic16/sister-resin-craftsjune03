@@ -76,6 +76,7 @@ Home page:
 
 
 # Technologies Used
+Django
 
 
 ## Front-End
