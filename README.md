@@ -1,39 +1,105 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<h1 align="center">Sister Resin Craft</h1>
 
-Welcome,
+[View live project]()
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+"Sister Resin Crafts" -  4th  Milestone Project.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 11th, 2023**
 
-## Codeanywhere Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+<h2>Screenshots:</h2>
 
-`python3 -m http.server`
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+# UX
+The purpose of this site is to be an e-commerce web application with a fully functional payment system
+and authentication system including email confirmations and user profiles. The superuser of the site will have the ability to create, edit and delete items. A registered user of the site will be able to browse the items and place them in a shopping bag and purchase them.
+It is designed to be responsive for mobile, tablet and work on all modern browers.
+The target audience for this site is for people who like something different from the normal, such as slasher coasters.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+# User Stories
+The goals of the business are:
+1.  Increasing traffic from social media
+2.  Creating more content
+3.  Customer satisfaction
+4.  Loyalty among customers
+5.  Growing our online presence
+6.  To have growth
+7.  To have a good reputation for potential new customers
 
-`http_server`
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+As a customer I want to:
+1.   Learn the background of the company.
+2.   For the site to be user friendly and easy to navigate
+3.   View a list of products
+4.   View details of each product
+5.   Easy access to special offers
+6.   To keep track on my spending
+7.   To Register an account and easily log in and out
+8.   To know the refund policy and the terms and conditions
+9.   Recover my password
+10.  Reviews and ratings from other customers to be easy to locate
+11.  To recieve email conformation after registration and after an order
+12.  Search for an item
+13.  Not to have annoying pop ups
+14.  Easy to purchase Items
+15.  Easy navigation to Social Media links
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+As a returning customer I want:
+1.  To see the website has been updated and what new items are available
+2.  To easily find any promotional offers available including sales.
+3.  To be able to contact company directly with any queries or customer order
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
----
+# Design
 
-Happy coding!
+## Framework
+
+## Colour Scheme
+
+## Typography
+
+## Icons
+
+## Wireframes
+
+
+## Features
+
+
+# Technologies Used
+
+
+## Front-End
+
+
+## Back-End
+
+## Libraries
+
+
+## Testing
+
+
+### HTML validator
+[W3C Markup Validator](https://validator.w3.org/)
+
+
+### CSS validator
+[W3C Markup Validator](https://jigsaw.w3.org/css-validator
+
+
+### PEP8 validator
+[W3C Markup Validator](https://www.pythonchecker.com/)
+
+
+# Compatibility and Responsiveness
+
+# Bugs
+
+# Deployment
+
+
+# Credits
+
