@@ -77,7 +77,7 @@ Home page:
 
 # Technologies Used
 Django
-
+allauth==0.41.0 
 
 ## Front-End
 
