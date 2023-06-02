@@ -90,6 +90,22 @@ body {
     color: white;
 }
 
+footer {
+    clear: both;
+    text-align: center;
+    padding: 5px;
+    background-image: linear-gradient(135deg, #9f05ff69 10%, #fd5e086b 100%);
+}
+
+footer a {
+    font-size: 30px;
+    padding: 2px;
+}
+
+input[name='q']::placeholder {
+    color: #aab7c4;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
