@@ -92,6 +92,8 @@ allauth==0.41.0
 
 ### HTML validator
 [W3C Markup Validator](https://validator.w3.org/)
+All screenshots for testing can be seen in the test folder.
+
 
 
 ### CSS validator
