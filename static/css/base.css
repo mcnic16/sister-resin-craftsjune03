@@ -90,5 +90,50 @@ body {
     color: white;
 }
 
+/* -------------------------------- Media Queries */
 
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 80%;
+    }
+
+.header-container {
+    padding-top: 120px;
+    }
+}
+
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 120px; 
+    }
+
+    .header-container-products {
+        padding-top: 44px;
+      }
+
+}
+
+    /* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+
+    html {
+         font-size: 16px; 
+    }
+
+    .header-container {
+         padding-top: 250px;
+    }
+
+}
 
