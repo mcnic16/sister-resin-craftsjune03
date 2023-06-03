@@ -1,0 +1,123 @@
+[{
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+        "name": "Hocus Pocus Coaster",
+        "description": "Chucky inspired Horror coaster",
+        "price": 6.00,
+        "category": 1,
+        "image": "ahocuspocus.webp"
+    }
+}, {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+        "name": "Hocus Pocus Coaster",
+        "description": "Hocus Pocus coasters ",
+        "price": 6.00,
+        "category": 1,
+        "image": "ahocuspocus1.webp"
+    }
+}, {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+        "name": "Hocus Pocus Coaster",
+        "description": "Hocus Pocus coasters ",
+        "price": 6.00,
+        "category": 1,
+        "image": "ahocuspocus2.webp"
+    }
+}, {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+        "name": "Hocus Pocus Coaster",
+        "description": "Hocus Pocus coasters ",
+        "price": 6.00,
+        "category": 1,
+        "image": "ahocuspocus3.webp"
+    }
+}, {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+        "name": "Beetle Juice",
+        "description": "Beetlejuice Inspired Coaster ",
+        "price": 6.00,
+        "category": 1,
+        "image": "beetlejuice.jpg"
+    }
+}, {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+        "name": "Beetle Juice",
+        "description": "Beetlejuice Inspired Coaster",
+        "price": 6.00,
+        "category": 1,
+        "image": "beetlejuice1.jpg"
+    }
+}, {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+        "name": "Beetle Juice",
+        "description": "Beetlejuice Inspired Coaster",
+        "price": 6.00,
+        "category": 1,
+        "image": "beetlejuice2.jpg"
+    }
+}, {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+        "name": "Beetle Juice",
+        "description": "Beetlejuice Inspired Coaster",
+        "price": 6.00,
+        "category": 1,
+        "image": "beetlejuice3.jpg"
+    }
+}, {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+        "name": "Ghostbuster Coaster",
+        "description": "Ghostbusters inspired Coasters ",
+        "price": 6.00,
+        "category": 1,
+        "image": "bghostbusters.webp"
+    }
+}, {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+        "name": "Ghostbuster Coaster",
+        "description": "Ghostbusters inspired Coasters. Mr Stay Puft the marshmellow man ",
+        "price": 6.00,
+        "category": 1,
+        "image": "bghostbusters1.webp"
+    }
+}, {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+        "name": "Ghostbuster Coaster",
+        "description": "Ghostbusters inspired Coasters ",
+        "price": 6.00,
+        "category": 1,
+        "image": "bghostbusters2.webp"
+    }
+}, {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+        "name": "Ghostbuster Coaster",
+        "description": "Ghostbusters inspired Coasters ",
+        "price": 6.00,
+        "category": 1,
+        "image": "bghostbusters3.webp"
+    }
+}, {
+
+]
