@@ -37,6 +37,7 @@
         "price": 6.00,
         "category": 1,
         "image": "ahocuspocus3.webp"
+
     }
 }, {
     "pk": 5,
@@ -119,5 +120,289 @@
         "image": "bghostbusters3.webp"
     }
 }, {
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+        "name": "Blue Glitter Coaster",
+        "description": "Blue Glitter Resin Coaster",
+        "price": 6.00,
+        "category": 1,
+        "image": "blueglittercoasters.jpg"
+    }
+    }, {
+        "pk": 14,
+        "model": "products.product",
+        "fields": {
+            "name": "Chucky Coaster",
+            "description": "Chucky inspired Horror coaster",
+            "price": 6.00,
+            "category": 1,
+            "image": "chucky.jpg"
+    }
+    }, {
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+            "name": "Johnny Depp Coaster",
+            "description": "Johnny Depp inspired coasters from his coutroom battle with Amber Heard.",
+            "price": 6.00,
+            "category": 1,
+            "image": "cjohnny.webp"
+        }
+    }, {
+        "pk": 16,
+        "model": "products.product",
+        "fields": {
+            "name": "Johnny Depp Coaster",
+            "description": "Johnny Depp inspired coasters from his coutroom battle with Amber Heard.",
+            "price": 6.00,
+            "category": 1,
+            "image": "cjohnny1.webp"
+        }
+    }, {
+        "pk": 17,
+        "model": "products.product",
+        "fields": {
+            "name": "Johnny Depp Coaster",
+            "description": "Johnny Depp inspired coasters from his coutroom battle with Amber Heard. ",
+            "price": 6.00,
+            "category": 1,
+            "image": "cjohnny2.webp"
+        }
+    }, {
+        "pk": 19,
+        "model": "products.product",
+        "fields": {
+            "name": "Johnny Depp Coaster",
+            "description": "Johnny Depp inspired coasters from his coutroom battle with Amber Heard. ",
+            "price": 6.00,
+            "category": 1,
+            "image": "cjohnny3.webp"
+        }
+    }, {
+        "pk": 20,
+        "model": "products.product",
+        "fields": {
+            "name": "Johnny Depp Coaster",
+            "description": "Johnny Depp inspired coasters from his coutroom battle with Amber Heard. ",
+            "price": 6.00,
+            "category": 1,
+            "image": "cjohnny4.webp"
+        }
+    }, {
+        "pk": 21,
+        "model": "products.product",
+        "fields": {
+            "name": "Johnny Depp Coaster",
+            "description": "Johnny Depp inspired coasters from his coutroom battle with Amber Heard. ",
+            "price": 6.00,
+            "category": 1,
+            "image": "cjohnny5.webp"
+        }
+    }, {
+        "pk": 22,
+        "model": "products.product",
+        "fields": {
+            "name": "Scream Coaster",
+            "description": "Scream inspired Blood Spatter Coasters",
+            "price": 6.00,
+            "category": 1,
+            "image": "dscream1.webp"
+        }
+    }, {
+        "pk": 23,
+        "model": "products.product",
+        "fields": {
+            "name": "Scream Coaster",
+            "description": "Scream inspired Blood Spatter Coasters ",
+            "price": 6.00,
+            "category": 1,
+            "image": "dscream2.webp"
+        }
+    }, {
+        "pk": 24,
+        "model": "products.product",
+        "fields": {
+            "name": "Scream Coaster",
+            "description": "Scream inspired Blood Spatter Coasters",
+            "price": 6.00,
+            "category": 1,
+            "image": "dscream3.webp"
+        }
+    }, {
+        "pk": 25,
+        "model": "products.product",
+        "fields": {
+            "name": "Scream Coaster",
+            "description": "Scream inspired Blood Spatter Coasters",
+            "price": 6.00,
+            "category": 1,
+            "image": "dscream3.webp"
+        }
+    }, {
+        "pk": 26,
+        "model": "products.product",
+        "fields": {
+            "name": "Scream Coaster",
+            "description": "Scream inspired Blood Spatter Coasters",
+            "price": 6.00,
+            "category": 1,
+            "image": "dscream3.webp"
+        }
+    }, {
+        "pk": 27,
+        "model": "products.product",
+        "fields": {
+            "name": "Freddy Krueger Coaster",
+            "description": "Freddie Krueger coaster from Nightmare On Elm Street",
+            "price": 6.00,
+            "category": 1,
+            "image": "freddyk.jpg"
+        }
+    }, {
+        "pk": 28,
+        "model": "products.product",
+        "fields": {
+            "name": "Ghostface Coaster",
+            "description": "Ghostface coaster from Scream",
+            "price": 6.00,
+            "category": 1,
+            "image": "ghostface.jpg"
+        }
+    }, {
+        "pk": 29,
+        "model": "products.product",
+        "fields": {
+            "name": "Ghostface Coaster",
+            "description": "Gold coaster with glitter",
+            "price": 6.00,
+            "category": 1,
+            "image": "glittergeodecoaster.jpg.jpg"
+        }
+    }, {
+        "pk": 30,
+        "model": "products.product",
+        "fields": {
+            "name": "Jason Vorhees Coaster",
+            "description": "Jason Vorhees coaster from Friday the 13th",
+            "price": 6.00,
+            "category": 1,
+            "image": "jasonv.jpg"
+        }
+    }, {
+        "pk": 31,
+        "model": "products.product",
+        "fields": {
+            "name": "Jigsaw Coaster",
+            "description": "Jigsaw coaster from Saw",
+            "price": 6.00,
+            "category": 1,
+            "image": "jigsaw.jpg"
+        }
+    }, {
+        "pk": 32,
+        "model": "products.product",
+        "fields": {
+            "name": "Michael Myers Coaster",
+            "description": "Michael Myers inspired coaster from Halloween",
+            "price": 6.00,
+        "category": 1,
+        "image": "michaelmyers.webp"
+        }
+    }, {
+        "pk": 33,
+        "model": "products.product",
+        "fields": {
+            "name": "Orange and Gold glitter coaster",
+            "description": "Orange and Gold Glitter coaster ",
+            "price": 6.00,
+            "category": 1,
+            "image": "orangeandgoldglitter.jpgp"
+        }
+    }, {
+        "pk": 34,
+        "model": "products.product",
+        "fields": {
+            "name": "PennyWise Coaster",
+            "description": "Pennywise coaster from the film IT",
+            "price": 6.00,
+            "category": 1,
+            "image": "pennywise.jpg"
+        }
+    }, {
+        "pk": 35,
+        "model": "products.product",
+        "fields": {
+            "name": "Pretty Little Liars Inspired Coasters",
+            "description": "Pretty Little Liars Inspired Coasters ",
+            "price": 6.00,
+            "category": 1,
+            "image": "prll.jpg"
+        }
+    }, {
+        "pk": 36,
+        "model": "products.product",
+        "fields": {
+            "name": "Pretty Little Liars Inspired Coasters",
+            "description": "Pretty Little Liars Inspired Coasters ",
+            "price": 6.00,
+            "category": 1,
+            "image": "prll1.jpg"
+        }
+    }, {
+        "pk": 37,
+        "model": "products.product",
+        "fields": {
+            "name": "Pretty Little Liars Inspired Coasters",
+            "description": "Pretty Little Liars Inspired Coasters ",
+            "price": 6.00,
+            "category": 1,
+            "image": "prll2.jpg"
+        }
+    }, {
+        "pk": 38,
+        "model": "products.product",
+        "fields": {
+            "name": "Pretty Little Liars Inspired Coasters",
+            "description": "Pretty Little Liars Inspired Coasters ",
+            "price": 6.00,
+            "category": 1,
+            "image": "prll3.jpg"
+        }
+    }, {
+        "pk": 39,
+        "model": "products.product",
+        "fields": {
+            "name": "Rune Coasters",
+            "description": "Rune Coasters ",
+            "price": 6.00,
+            "category": 1,
+            "image": "runecoasters.jpg"
+        }
+    }, {
+        "pk": 40,
+        "model": "products.product",
+        "fields": {
+            "name": "Teal and Gold Coaster",
+            "description": "Teal and Gold Coasters ",
+            "price": 6.00,
+            "category": 1,
+            "image": "tealandgold.jpg"
+        }
+    }, {
+
+
+
+
+
+
+    
+
+    
+        
+
+        
+        
+
 
 ]
