@@ -470,7 +470,7 @@
             "image": "opennywise.jpg"
         }
     }, {
-        "pk": 50,
+        "pk": 49,
         "model": "products.product",
         "fields": {
             "name": "Orange and gold autumnal floral phonestand ",
@@ -480,26 +480,108 @@
             "image": "orangeandgoldautumnalfloralphonestand.jpg"
         }
     }, {
-        "pk": 51,
+        "pk": 50,
         "model": "products.product",
         "fields": {
             "name": "Skull and snake trinket tray ",
             "description": "A handy tray to keep your keys or glasses in etc..",
-            "price": 6.00,
+            "price": 14.00,
             "category": 2,
             "image": "oskullandsnaketrinkettray.jpg"
         }
     }, {
-        "pk": 52,
+        "pk": 51,
         "model": "products.product",
         "fields": {
             "name": "Tea light holder ",
             "description": "Beautiful sparkly tea light holders that give off a beautiful coloured glow when tea light is lit",
-            "price": 6.00,
+            "price": 14.00,
             "category": 2,
             "image": "otealightholder.jpg"
         }
+    }, {       
+        "pk": 52,
+        "model": "products.product",
+        "fields": {
+            "name": "Freddie christmas card ",
+            "description": "Freddie Krueger Christmas card, making dreams come true ",
+            "price": 2.00,
+            "category": 3,
+            "image": "sfreddie_christmas_card.jpg"
+        }
     }, {
+        "pk": 53,
+        "model": "products.product",
+        "fields": {
+            "name": "Ghostface Christmas card ",
+            "description": "Have an absolute screamer of a christmas with this card. ",
+            "price": 2.00,
+            "category": 3,
+            "image": "sghostface_christmas_card.jpg"
+        }
+    }, {
+        "pk": 54,
+        "model": "products.product",
+        "fields": {
+            "name": "Jason Vorhess Christmas Card",
+            "description": "Having a slashing christmas with this Jason Vorhess card from Friday the 13th",
+            "price": 2.00,
+            "category": 3,
+            "image": "sjason_christmas_card.jpg"
+        }
+    }, {
+        "pk": 55,
+        "model": "products.product",
+        "fields": {
+            "name": "Merry killmas card",
+            "description": "A merry killmas card ",
+            "price": 2.00,
+            "category": 3,
+            "image": "smerry_killmas_card.jpg"
+        }
+    }, {
+        "pk": 56,
+        "model": "products.product",
+        "fields": {
+            "name": "Michael Myers bauble ",
+            "description": "Michael Myers inspired bauble ",
+            "price": 10.00,
+            "category": 3,
+            "image": "smichael_myers_bauble.jpg"
+        }
+        }, {
+            "pk": 57,
+            "model": "products.product",
+            "fields": {
+                "name": "Personalised Glass Christmas Bauble ",
+                "description": "Simple but beautiful handmade glass personalised Christmas bauble ",
+                "price": 6.00,
+                "category": 3,
+                "image": "spersonalised_bauble.jpg"
+            }
+        }, {
+            "pk": 58,
+            "model": "products.product",
+            "fields": {
+                "name": "Pet Personalised Glass Christmas Bauble ",
+                "description": "Simple but beautiful handmade glass personalised Christmas bauble with holly as a border or paw prints for your pets.",
+                "price": 6.00,
+                "category": 2,
+                "image": "spet_personalised_bauble.jpg"
+            }
+        }, {
+            "pk": 59,
+            "model": "products.product",
+            "fields": {
+                "name": "Spooky Baubles",
+                "description": "Spooky christmas baubles ",
+                "price": 6.00,
+                "category": 3,
+                "image": "spookmas_baubles.jpeg"
+            }
+        }
+    
+    ]
         
 
 
