@@ -78,6 +78,7 @@ Home page:
 # Technologies Used
 Django
 allauth==0.41.0 
+Pillow
 
 ## Front-End
 
