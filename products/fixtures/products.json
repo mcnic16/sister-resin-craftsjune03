@@ -390,6 +390,117 @@
             "image": "tealandgold.jpg"
         }
     }, {
+        "pk": 41,
+        "model": "products.product",
+        "fields": {
+            "name": "Autumnal Orange Gold Crystal Trinkettray ",
+            "description": "A good place to put your keys or sunglasses etc bur be careful and do not expose to extreme temperatures or naked flames. ",
+            "price": 14.00,
+            "category": 2,
+            "image": "oautumnalorangegoldcrystaltrinkettray.jpg"
+        }
+    }, {
+        "pk": 42,
+        "model": "products.product",
+        "fields": {
+            "name": "Buffy The Vampire Slayer Trinket Tray",
+            "description": "Buffy trinket tray with quote “If the Apocalypse Comes, Beep Me” with blue background and black rim ",
+            "price": 14.00,
+            "category": 2,
+            "image": "obuffy.jpg"
+        }
+    }, {
+        "pk": 43,
+        "model": "products.product",
+        "fields": {
+            "name": "Dirty Dancing Trinket Tray ",
+            "description": "Beautifully simple Dirty Dancing inspired trinket tray - perfect for your keys, jewellery, glasses etc ",
+            "price": 14.00,
+            "category": 2,
+            "image": "odirtydancing.jpg"
+        }
+    }, {
+        "pk": 44,
+        "model": "products.product",
+        "fields": {
+            "name": "Flower and gold leaf trinket tray",
+            "description": "Perfect for your keys, jewellery, glasses etc",
+            "price": 14.00,
+            "category": 2,
+            "image": "oflower_gold_leaf_trinket_tray.jpg"
+        }
+    }, {
+        "pk": 45,
+        "model": "products.product",
+        "fields": {
+            "name": "Gold leaf phone holder. ",
+            "description": "Resin gold and gold leaf phone stand ",
+            "price": 10.00,
+            "category": 2,
+            "image": "ogold_leaf_phone_holder.jpg"
+        }
+    }, {
+        "pk": 46,
+        "model": "products.product",
+        "fields": {
+            "name": "Hocus Pocus Baubles ",
+            "description": "Hocus Pocus Sanderson Sisters Halloween / Christmas Glass Bauble ",
+            "price": 10.00,
+            "category": 3,
+            "image": "ohocus_pocus_sanderson_sisters_bauble.jpgg"
+        }
+    }, {
+        "pk": 47,
+        "model": "products.product",
+        "fields": {
+            "name": "Teal and Silver Glitter Makeup Brush Holder/Desk Tidy ",
+            "description": "Teal and Silver Glitter makeup brush / pen holder / desk tidy",
+            "price": 6.00,
+            "category": 2,
+            "image": "omake_up_brush_holder.jpg"
+        }
+    }, {
+        "pk": 48,
+        "model": "products.product",
+        "fields": {
+            "name": "IT Pennywise Trinket Tray ",
+            "description": "It Pennywise Trinket Tray with 'You Float My Boat'and hearts with blood spatter ",
+            "price": 15.00,
+            "category": 2,
+            "image": "opennywise.jpg"
+        }
+    }, {
+        "pk": 50,
+        "model": "products.product",
+        "fields": {
+            "name": "Orange and gold autumnal floral phonestand ",
+            "description": "A Orange and gold autumnal floral phonestand ",
+            "price": 10.00,
+            "category": 2,
+            "image": "orangeandgoldautumnalfloralphonestand.jpg"
+        }
+    }, {
+        "pk": 51,
+        "model": "products.product",
+        "fields": {
+            "name": "Skull and snake trinket tray ",
+            "description": "A handy tray to keep your keys or glasses in etc..",
+            "price": 6.00,
+            "category": 2,
+            "image": "oskullandsnaketrinkettray.jpg"
+        }
+    }, {
+        "pk": 52,
+        "model": "products.product",
+        "fields": {
+            "name": "Tea light holder ",
+            "description": "Beautiful sparkly tea light holders that give off a beautiful coloured glow when tea light is lit",
+            "price": 6.00,
+            "category": 2,
+            "image": "otealightholder.jpg"
+        }
+    }, {
+        
 
 
 
