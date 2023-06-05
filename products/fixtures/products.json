@@ -273,11 +273,11 @@
         "pk": 29,
         "model": "products.product",
         "fields": {
-            "name": "Ghostface Coaster",
+            "name": "Gold coaster with glitter",
             "description": "Gold coaster with glitter",
             "price": 6.00,
             "category": 1,
-            "image": "glittergeodecoaster.jpg.jpg"
+            "image": "glittergeodecoaster.jpg"
         }
     }, {
         "pk": 30,
@@ -317,7 +317,7 @@
             "description": "Orange and Gold Glitter coaster ",
             "price": 6.00,
             "category": 1,
-            "image": "orangeandgoldglitter.jpgp"
+            "image": "orangeandgoldglitter.jpg"
         }
     }, {
         "pk": 34,
@@ -447,7 +447,7 @@
             "description": "Hocus Pocus Sanderson Sisters Halloween / Christmas Glass Bauble ",
             "price": 10.00,
             "category": 3,
-            "image": "ohocus_pocus_sanderson_sisters_bauble.jpgg"
+            "image": "ohocus_pocus_sanderson_sisters_bauble.jpg"
         }
     }, {
         "pk": 47,
