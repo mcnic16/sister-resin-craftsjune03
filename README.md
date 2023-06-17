@@ -79,6 +79,8 @@ Home page:
 Django
 allauth==0.41.0 
 Pillow
+Crispy Forms
+Stripe
 
 ## Front-End
 
