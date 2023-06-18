@@ -131,10 +131,15 @@ input[name='q']::placeholder {
         max-width: 80%;
     }
 
-.header-container {
-    padding-top: 120px;
+    .header-container {
+        padding-top: 120px;
+    }
+
+    .reg-header-container {
+        padding-top: 145px;
     }
 }
+
 
 
 /* fixed top navbar only on medium and up */
@@ -155,6 +160,10 @@ input[name='q']::placeholder {
         padding-top: 44px;
       }
 
+      .reg-header-container {
+        padding-top: 145px;
+        }
+
 }
 
     /* pad the top a bit when navbar is collapsed on mobile */
@@ -168,5 +177,8 @@ input[name='q']::placeholder {
          padding-top: 250px;
     }
 
+    .reg-header-container {
+        padding-top: 250px;
+    }
 }
 
