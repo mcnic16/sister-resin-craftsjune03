@@ -81,6 +81,7 @@ allauth==0.41.0
 Pillow
 Crispy Forms
 Stripe
+django-countries
 
 ## Front-End
 
