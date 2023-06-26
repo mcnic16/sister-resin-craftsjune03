@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+{% endblock %}
+
+{% block page_header %}
+<div class="container ">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid reg-header-container">
+    <div class="row">
+        {% for rating in ratings %}
+        <h3>{{ rating.product }}</h3>
+        <p>User: {{ rating.user }}</p>
+        <p>Stars: {{ rating.stars }}</p>
+        <p>Comment: {{ rating.comment }}</p>
+        <p>Date: {{ rating.date }}</p>
+        <hr>
+      {% empty %}
+        <p>No ratings available.</p>
+      {% endfor %}
+    </div>
+</div>
+{% endblock %}
