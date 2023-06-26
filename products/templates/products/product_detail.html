@@ -37,6 +37,7 @@
                         <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
                     </a>
                 </p>
+                
                 {% endif %}
                 {% if request.user.is_superuser %}
                 <small class="ml-3">
@@ -74,6 +75,7 @@
                             </div>
                         </div>
                     </div>
+                    <a href="{% url 'rate_product' %}">Click here to rate this product</a>
 
                     <div class="col-12 {% if s %}-12 mt-2{% endif %}">
                         <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
