@@ -15,15 +15,10 @@
 {% block content %}
 <div class="container-fluid reg-header-container">
     <div class="row">
-        {% for rating in ratings %}
-        <h3>{{ rating.product }}</h3>
-        <p>Stars: {{ rating.stars }}</p>
-        <p>Comment: {{ rating.comment }}</p>
-        <p>Date: {{ rating.date }}</p>
-        <hr>
-        {% empty %}
-        <p>No ratings available.</p>
-      {% endfor %}
+    <div class="col">
+      <h2>Ratings</h2>
+      {% include 'ratings/show_ratings.html' %}
     </div>
+  </div>
 </div>
 {% endblock %}

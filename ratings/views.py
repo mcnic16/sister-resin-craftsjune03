@@ -1,19 +1,27 @@
 from django.shortcuts import render, redirect
 from .models import Rating
+from products.models import Product
+from django.shortcuts import get_object_or_404
+
 
 def rate_product(request, product_id):
+    product = get_object_or_404(Product, pk=product_id)
     if request.method == 'POST':
-        product = get_object_or_404(Product, pk=product_id)
-        user = request.user
         stars = int(request.POST.get('stars'))
         comment = request.POST.get('comment')
 
-        Rating.objects.create(product=product, user=user, stars=stars, comment=comment)
+        Rating.objects.create(product=product, stars=stars, comment=comment)
 
-        return redirect('ratings:show_ratings')
+        return redirect('ratings/show_ratings.html')
+    context = {
+        "product_id": product.id
+    }
+    return render(request, 'ratings/rate_product.html', context)
 
-    return render(request, 'ratings/rate_product.html')
 
 def show_ratings(request):
     ratings = Rating.objects.all()
-    return render(request, 'ratings/show_ratings.html', {'ratings': ratings})
+    context = {
+        "ratings": ratings
+    }
+    return render(request, 'ratings/show_ratings.html', context)

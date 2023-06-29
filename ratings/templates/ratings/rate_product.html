@@ -15,7 +15,7 @@
 {% block content %}
 <div class="container-fluid reg-header-container">
     <div class="row">
-        <form method="post" action="{% url 'ratings:rate_product' product_id %}">
+        <form method="post" action="{% url 'rate_product' product_id %}">
   {% csrf_token %}
   <label for="stars">Rating:</label>
   <select name="stars" id="stars">
