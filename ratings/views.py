@@ -9,10 +9,8 @@ def rate_product(request, product_id):
     if request.method == 'POST':
         stars = int(request.POST.get('stars'))
         comment = request.POST.get('comment')
-
         Rating.objects.create(product=product, stars=stars, comment=comment)
 
-        return redirect('ratings/show_ratings.html')
     context = {
         "product_id": product.id
     }

@@ -107,6 +107,8 @@ body {
     border-radius: 4px;
   }
   
+
+
 footer {
     clear: both;
     text-align: center;
@@ -136,6 +138,10 @@ input[name='q']::placeholder {
 
     .reg-header-container {
         padding-top: 145px;
+    }
+
+    .review {
+        margin-left: 250px;
     }
 }
 
