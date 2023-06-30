@@ -1,3 +1,7 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def aboutus(request):
+    """ A view to return the queries page """
+
+    return render(request, 'queries/queries.html')
