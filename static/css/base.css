@@ -107,8 +107,6 @@ body {
     border-radius: 4px;
   }
   
-
-
 footer {
     clear: both;
     text-align: center;
@@ -125,6 +123,13 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+
+.ratingscard {
+    max-height: 400px;
+    overflow: auto;
+}
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -140,8 +145,9 @@ input[name='q']::placeholder {
         padding-top: 145px;
     }
 
+    /* rate product  */
     .review {
-        margin-left: 250px;
+        margin-left: 70px;
     }
 }
 
@@ -230,6 +236,7 @@ input[name='q']::placeholder {
         
 
 
+
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
@@ -248,7 +255,7 @@ input[name='q']::placeholder {
         padding-top: 44px;
       }
 
-      .reg-header-container {
+    .reg-header-container {
         padding-top: 145px;
         }
 
