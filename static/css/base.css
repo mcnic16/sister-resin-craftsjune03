@@ -130,6 +130,7 @@ input[name='q']::placeholder {
 }
 
 
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -148,10 +149,8 @@ input[name='q']::placeholder {
     /* rate product  */
     .review {
         margin-left: 70px;
-    }
+    }   
 }
-
-   
     /* Allauth form formatting */
 
 .allauth-form-inner-content p {
