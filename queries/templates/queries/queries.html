@@ -52,19 +52,12 @@
     </div>
     <p>Buyers are responsible for return postage costs. If the item is not returned in its original condition,
         the buyer is responsible for any loss in value.</p>
+        <a href="{% url 'submit_query' %}">Submit a Query</a>
 </div>
 </div>
 </div>
 
-<h4>Please get in touch using this form:</h4>
-<div class="card">
-    <div class="card-body ratings-card">
-        <form method="post" action="{% url 'submit_query' %}">
-            {% csrf_token %}
-            {{ query_form.as_p }}
-            <button type="submit">Submit</button>
-          </form>
-    </div>
-    </div>
 
+    </div>
+    </div>
 {% endblock %}
