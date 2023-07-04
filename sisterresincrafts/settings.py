@@ -27,7 +27,8 @@ SECRET_KEY = 'django-insecure-j2+quhdg6+(8y!i8l_6_+^1g2_fn!%9sodkz%1cbl2aw(!bo#z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['sister-resin-crafts.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['https://sister-resin-crafts-0a0db659606f.herokuapp.com/',
+                '8000-mcnic16-sisterresincraf-dekxparl9be.ws-eu101.gitpod.io']
 
 
 # Application definition

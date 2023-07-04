@@ -202,8 +202,13 @@ Gitpod
 2. Type in your email address, and when prompted for your password, right-click and select paste in  the API key.
 3. Type 'heroku config:set DISABLE_COLLECTSTATIC=1 -a sister-resin-crafts' in the terminal.
 4. Add the hostname of our Heroku app to allowed hosts in settings.py
-    ALLOWED_HOSTS = ALLOWED_HOSTS = ['sister-resin-crafts.herokuapp.com', 'localhost']
-5. 
+    ALLOWED_HOSTS = ['sister-resin-crafts.herokuapp.com',
+                '8000-mcnic16-sisterresincraf-dekxparl9be.ws-eu101.gitpod.io']
+5. Type 'heroku git:remote -a sister-resin-crafts' in the terminal
+6. git add, git commit, git push then git push heroku main
+
+Heroku
+1. 
 
 
 
