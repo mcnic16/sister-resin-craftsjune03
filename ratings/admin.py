@@ -4,13 +4,11 @@ from .models import Rating
 
 class RatingsAdmin(admin.ModelAdmin):
     list_display = (
-        'product',
-        'stars',
-        'comment',
-        'date',
+        "product",
+        "stars",
+        "comment",
+        "date",
     )
-
-
 
 
 admin.site.register(Rating, RatingsAdmin)
