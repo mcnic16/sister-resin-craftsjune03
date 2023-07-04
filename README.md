@@ -114,6 +114,100 @@ All screenshots for testing can be seen in the test folder.
 
 # Deployment
 
+ElephantSQL
+1. Log in to ElephantSQL.com to access your dashboard.
+2. Click “Create New Instance”
+3. Give your plan a Name (sister resin crafts)
+4. Select the Tiny Turtle (Free) plan
+5. Leave the Tags field blank
+6. Select “Select Region” which is Europe-west2(London)
+7. Then click “Review”
+8. Check your details are correct and then click “Create instance”
+9. Return to the ElephantSQL dashboard and click on the database instance name for this project
+10. In the URL section, clicking the copy icon will copy the database URL to your clipboard.
+
+Heroku 
+1. Click New to create a new app
+2. Give the app a name(sister-resin-crafts) and select the region closest to you(Europe). When    you’re done, click Create app to confirm.
+3. Open the Settings tab
+4. Add the config var DATABASE_URL, and for the value, copy in your database url from ElephantSQL
+
+Gitpod
+1. In the terminal, install dj_database_url and psycopg2:
+    pip3 install dj_database_url==0.5.0 psycopg2
+2. Update the requirements.txt file with the newly installed packages:
+    pip freeze > requirements.txt
+3. In the settings.py file, import dj_database_url underneath the import for os
+    import os
+    import dj_database_url
+4. Scroll to the DATABASES section and update it to the following code, so that the original connection to sqlite3 is commented out and we connect to the new ElephantSQL database instead:
+    # DATABASES = {
+    #     'default': {
+    #         'ENGINE': 'django.db.backends.sqlite3',
+    #         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    #     }
+    # }
+     
+    DATABASES = {
+     'default': dj_database_url.parse('your-database-url-here')
+    }
+
+5. In the terminal, type python3 manage.py showmigrations
+6. Migrate the database models to the new database using python3 manage.py migrate
+7. Load in the fixtures, categories first.
+    python3 manage.py loaddata categories
+    python3 manage.py loaddata products
+8. Create a superuser for your new database
+    python3 manage.py createsuperuser
+9. Delete database from settings.py and reconnect to the local sqlite database.
+    DATABASES = {
+     'default': {
+         'ENGINE': 'django.db.backends.sqlite3',
+         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+     }
+ }
+ 
+ ElephantSQL
+
+1. On the ElephantSQL page for the database, in the left side navigation, select “BROWSER”
+2. Click the Table queries button, select auth_user(public)
+3. When you click “Execute”, you should see your newly created superuser details displayed. This   confirms your tables have been created and you can add data to your database.
+
+ Gitpod
+
+1. In settings.py change this line to ACCOUNT_EMAIL_VERIFICATION = 'none'.
+2. Change database in settings to an if statement:
+    if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
+3. Install gunicorn in the terminal : pip3 install gunicorn
+4. pip freeze > requirements.txt
+4. Create a Procfile o tell Heroku to create a web dyno.
+    web: gunicorn sisterresincrafts.wsgi:application
+5. Install Heroku in the terminal: npm i -g heroku
+
+Heroku
+1 . Scroll down to the API Key section, then click on the 'reveal' button, and copy the API Key.
+
+Gitpod
+1. Login into heroku : heroku login -i
+2. Type in your email address, and when prompted for your password, right-click and select paste in  the API key.
+3. Type 'heroku config:set DISABLE_COLLECTSTATIC=1 -a sister-resin-crafts' in the terminal.
+4. Add the hostname of our Heroku app to allowed hosts in settings.py
+    ALLOWED_HOSTS = ALLOWED_HOSTS = ['sister-resin-crafts.herokuapp.com', 'localhost']
+5. 
+
+
+
+    
 
 # Credits
 

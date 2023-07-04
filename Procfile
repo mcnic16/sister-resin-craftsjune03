@@ -1,0 +1,1 @@
+web: gunicorn sisterresincrafts.wsgi:application
