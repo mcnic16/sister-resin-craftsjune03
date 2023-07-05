@@ -227,7 +227,35 @@ AWS amazon services
 5. untick Block all public access
 6. Click on Create Bucket
 7. click on bucket :sister-resin-craftsjune03
-8. Go to properties  and 
+8. Go to properties  and click on static website hosting 
+9. For the index and error document, we can just fill in some default values since they won't be used in this case and then click save.
+10. On the permissions tab paste in a coors configuration:
+    [
+{
+"AllowedHeaders": [
+"Authorization"
+],
+"AllowedMethods": [
+"GET"
+],
+"AllowedOrigins": [
+"*"
+],
+"ExposeHeaders": []
+}
+]
+11. The Bucket Policy is unchanged. For the Access control list (ACL) section, click edit and enable List for Everyone (public access) and accept the warning box. 
+12. Click on Bucket Policy and Policy generator
+13. Select Type of Policy - s3 bucket policy
+14. Allow all principals by using *
+15. For the action select get object
+16. Copy the ARN which stands for Amazon resource name from the other tab and paste it into the     ARN box here at the bottom.
+17. Click Add statement.
+18. Click generate policy.
+19. Copy this policy into the bucket policy editor.
+20. Add a /* here onto the end of the resource key and click save.
+
+
 
 
 
