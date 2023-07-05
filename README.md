@@ -258,8 +258,11 @@ AWS amazon services
 22. Click on create group
 23. Type in the name of the user group.
 24. Click on Create Policy
-25. Go to the JSON tab
-26. 
+25. To attach the policy, on the sidebar click User Groups. Select your group, go to the permissions tab, open the Add permissions dropdown, and click Attach policies. Select the policy and click Add permissions at the bottom.
+26. In IAM left sidebar click on users, then the username of the user you have just created
+27. Below the user summary click on the tab security credentials
+28. Scroll down to access keys and click create access key
+29. Here you can create an access key and secret access key and once saved, download the csv file
 
 
 
