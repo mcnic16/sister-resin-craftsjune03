@@ -208,7 +208,27 @@ Gitpod
 6. git add, git commit, git push then git push heroku main
 
 Heroku
-1. 
+1. On the deploy tab set it to connect to github.
+2. Search for my repository (sister-resin-craftsjune03) and then click connect.
+3. Enable automatic deploys.
+4. Generate a random secret key number.
+5. In the config vars add SECRET_KEY with the new number
+
+GitPod
+1. Change the following variables in settings:
+    SECRET_KEY = os.environ.get('SECRET_KEY', '') 
+    DEBUG = 'DEVELOPMENT' in os.environ
+
+AWS amazon services
+1. Search for s3, in s3 create a bucket.
+2. Type in the name for the bucket (sister-resin-craftsjune03)
+3. aws region = London
+4. Enable ecl
+5. untick Block all public access
+6. Click on Create Bucket
+7. click on bucket :sister-resin-craftsjune03
+8. Go to properties  and 
+
 
 
 
