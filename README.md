@@ -264,6 +264,55 @@ AWS amazon services
 28. Scroll down to access keys and click create access key
 29. Here you can create an access key and secret access key and once saved, download the csv file
 
+Gitpod
+1. install boto 3 and django storages
+2. pip freeze > requirements.txt
+3. Put the follow in settings.py:
+
+if 'USE_AWS' in os.environ:
+    # Bucket Config
+    AWS_STORAGE_BUCKET_NAME = 'sister-resin-craftsjune03'
+    AWS_S3_REGION_NAME = 'eu-west-2'
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+
+    # Static and media files
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    STATICFILES_LOCATION = 'static'
+    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+    MEDIAFILES_LOCATION = 'media'
+
+    # Override static and media URLs in production
+    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+
+Heroku
+
+1. Add: AWS_ACCESS_KEY_ID to the convig vars, and also AWS_SECRET_ACCESS_KEY with the variables in the csv file.
+2. Add USE_AWS and set it to true.
+3. remove the disable collectstatic variable.
+
+gitpod
+
+1. Add a newfile custom_storages.py
+2. Add the following code:
+from django.conf import settings
+from storages.backends.s3boto3 import S3Boto3Storage
+
+
+class StaticStorage(S3Boto3Storage):
+    location = settings.STATICFILES_LOCATION
+
+
+class MediaStorage(S3Boto3Storage):
+    location = settings.MEDIAFILES_LOCATION
+
+
+
+
+
+
 
 
 
