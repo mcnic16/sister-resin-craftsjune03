@@ -254,6 +254,12 @@ AWS amazon services
 18. Click generate policy.
 19. Copy this policy into the bucket policy editor.
 20. Add a /* here onto the end of the resource key and click save.
+21. Search for IAM
+22. Click on create group
+23. Type in the name of the user group.
+24. Click on Create Policy
+25. Go to the JSON tab
+26. 
 
 
 
