@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+{% endblock %}
+
+{% block page_header %}
+<div class="container reg-header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+<div class="aboutus">
+<!--------------------about us section-------------->
+
+    <!-------------------The Creative Process-->
+
+    <div class="aboutusheading">
+        <h4>The Creative Process</h4>
+    </div>
+    <p>What is a Resin Coaster?</p>
+    <p>The resin is poured into a mold to make a coaster. The coaster helps to protect your tables when placing
+        glasses or cups onto them.</p>
+    <p>We use a heat resistant epoxy resin and include care instructions with every purchase.</p>
+    <p>Coasters should be kept away from harsh cleaning products/chemicals and direct heat.</p>
+
+    <!-------------------About the company-->
+
+    <div class="aboutusheading">
+    <h4>Processing time</h4>
+    <p>The time we need to prepare an order for dispatch varies. For details, see individual items.</p>
+    <h4>Customs and import taxes</h4>
+    <p>Buyers are responsible for any customs and import taxes that may apply. We are not responsible for delays
+        due to customs.</p>
+    <h4>Returns & exchanges</h4>
+    <p>We gladly accept returns and exchanges if you Contact us within 14 days of delivery and dispatch the
+        items back within 30 days of delivery</p>
+    <p>We don't accept cancellations, but please contact us if you have any problems with your order.</p>
+    <p>Because of the nature of these items, unless they arrive damaged or defective, I can't accept returns
+        for:</p>
+    <div class="list">
+        <ul>
+            <li>Custom or personalised orders</li>
+            <li>Perishable products (like food or flowers)</li>
+            <li>Digital downloads</li>
+            <li>Intimate items (for health/hygiene reasons)</li>
+        </ul>
+    </div>
+    <p>Buyers are responsible for return postage costs. If the item is not returned in its original condition,
+        the buyer is responsible for any loss in value.</p>
+        <a href="{% url 'submit_query' %}">Submit a Query</a>
+</div>
+</div>
+</div>
+
+
+    </div>
+    </div>
+{% endblock %}

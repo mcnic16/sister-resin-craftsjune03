@@ -17,8 +17,13 @@
             </a>
         </li>
          <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="" aria-haspopup="true" aria-expanded="false">
-                    <h4>Query form/Reviews</h4>
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'show_ratings' %}" aria-haspopup="true" aria-expanded="false">
+                    <h4>Reviews</h4>
+            </a>
+         </li>
+         <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'queries' %}" aria-haspopup="true" aria-expanded="false">
+                    <h4>Queries/T&C</h4>
             </a>
          </li>
         </ul>

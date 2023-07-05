@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+{% endblock %}
+
+{% block page_header %}
+<div class="container reg-header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h5>Here are some ratings and comments about our products:</h5>
+    {% for rating in ratings %}
+      <div id="accordion{{ rating.id }}">
+        <div class="card">
+          <div class="card-header" id="heading{{ rating.id }}">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapse{{ rating.id }}" aria-expanded="true" aria-controls="collapse{{ rating.id }}">
+                <h5>{{ rating.product }}<h5>
+              </button>
+            </h5>
+          </div>
+          <div id="collapse{{ rating.id }}" class="collapse" aria-labelledby="heading{{ rating.id }}" data-parent="#accordion{{ rating.id }}">
+            <div class="card-body">
+              <p>Comment: {{ rating.comment }}</p>
+              <p>Date: {{ rating.date }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      {% empty %}
+      <p>No ratings available.</p>
+    {% endfor %}
+</div>
+
+{% endblock %}
