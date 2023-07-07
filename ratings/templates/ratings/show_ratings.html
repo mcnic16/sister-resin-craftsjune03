@@ -25,21 +25,21 @@
           </div>
           <div id="collapse{{ rating.id }}" class="collapse" aria-labelledby="heading{{ rating.id }}" data-parent="#accordion{{ rating.id }}">
             <div class="card-body">
-      <div class="stars">
-        {% for star in rating.stars %}
-          <span class="star">&#9733;</span>
-        {% endfor %}
-      </div>
-      <p>Comment: {{ rating.comment }}</p>
-      <p>Date: {{ rating.date }}</p>
+              <div class="stars">
+                {% for star in rating.stars %}
+                  <span class="star">&#9733;</span>
+                {% endfor %}
+              </div>
+              <p>Comment: {{ rating.comment }}</p>
+              <p>Date: {{ rating.date }}</p>
+            </div>
           </div>
         </div>
-      </div>
-      <hr>
-      {% empty %}
+        <hr>
+      </div> 
+    {% empty %}
       <p>No ratings available.</p>
     {% endfor %}
-</div>
-</div>
+</div> 
 
 {% endblock %}
