@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = ')rgn1zk1#+rs)#yl*60v9h)*k-g9ek(p5f++39up%zu++#wkra'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+
 
 ALLOWED_HOSTS = ['sister-resin-craftsjune03-26aff5e95fce.herokuapp.com',
                 '8000-mcnic16-sisterresincraf-dekxparl9be.ws-eu101.gitpod.io']
@@ -182,7 +182,7 @@ if 'USE_AWS' in os.environ:
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
     }
-    
+
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'sister-resin-craftsjune03'
     AWS_S3_REGION_NAME = 'eu-west-2'
