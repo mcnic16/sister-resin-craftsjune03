@@ -17,5 +17,7 @@ def rate_product(request, product_id):
 
 def show_ratings(request):
     ratings = Rating.objects.all()
+    for rating in ratings:
+        rating.stars = [1] * rating.stars
     context = {"ratings": ratings}
     return render(request, "ratings/show_ratings.html", context)
