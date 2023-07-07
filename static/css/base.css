@@ -129,7 +129,13 @@ input[name='q']::placeholder {
     overflow: auto;
 }
 
-
+.stars {
+    color: gold;
+  }
+  
+  .star {
+    font-size: 24px;
+  }
 
 /* -------------------------------- Media Queries */
 
