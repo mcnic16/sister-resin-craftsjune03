@@ -21,3 +21,17 @@ def show_ratings(request):
         rating.stars = [1] * rating.stars
     context = {"ratings": ratings}
     return render(request, "ratings/show_ratings.html", context)
+
+
+def edit_rating(request, rating_id):
+    rating = get_object_or_404(Rating, pk=rating_id)
+    if request.method == "POST":
+        rating.stars = int(request.POST.get("stars"))
+        rating.comment = request.POST.get("comment")
+        rating.save()
+        return redirect('show_ratings')
+
+    context = {"rating": rating}
+    return render(request, "ratings/edit_rating.html", context)
+
+
