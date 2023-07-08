@@ -2,8 +2,10 @@ from django.shortcuts import render, redirect
 from .models import Rating
 from products.models import Product
 from django.shortcuts import get_object_or_404
+from django.contrib.auth.decorators import login_required
 
 
+@login_required
 def rate_product(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     if request.method == "POST":
@@ -23,6 +25,7 @@ def show_ratings(request):
     return render(request, "ratings/show_ratings.html", context)
 
 
+@login_required
 def edit_rating(request, rating_id):
     rating = get_object_or_404(Rating, pk=rating_id)
     if request.method == "POST":
@@ -35,6 +38,7 @@ def edit_rating(request, rating_id):
     return render(request, "ratings/edit_rating.html", context)
 
 
+@login_required
 def delete_rating(request, rating_id):
     rating = get_object_or_404(Rating, pk=rating_id)
     if request.method == "POST":

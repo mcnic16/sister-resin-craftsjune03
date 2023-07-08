@@ -22,8 +22,7 @@
               <button class="btn btn-link" data-toggle="collapse" data-target="#collapse{{ rating.id }}" aria-expanded="true" aria-controls="collapse{{ rating.id }}">
                 <h5> {{ rating.product }}</h5>
               </button>
-              <a href="{% url 'edit_rating' rating.id %}" class="btn btn-primary btn-sm">Edit</a>
-              <a href="{% url 'delete_rating' rating.id %}" class="btn btn-primary red btn-sm">Delete</a>
+              
           </div>
           <div id="collapse{{ rating.id }}" class="collapse" aria-labelledby="heading{{ rating.id }}" data-parent="#accordion{{ rating.id }}">
             <div class="card-body">
@@ -34,6 +33,10 @@
               </div>
               <p>Comment: {{ rating.comment }}</p>
               <p>Date: {{ rating.date }}</p>
+              {% if user.is_authenticated %}
+              <a href="{% url 'edit_rating' rating.id %}" class="btn btn-primary btn-sm">Edit</a>
+              <a href="{% url 'delete_rating' rating.id %}" class="btn btn-primary red btn-sm">Delete</a>
+              {% endif %}
             </div>
           </div>
         </div>
