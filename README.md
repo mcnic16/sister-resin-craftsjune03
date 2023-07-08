@@ -1,12 +1,16 @@
-<h1 align="center">Sister Resin Craft</h1>
+<h1 align="center">Sister Resin Crafts</h1>
 
-[View live project]()
+[View live project](https://sister-resin-craftsjune03-26aff5e95fce.herokuapp.com/)
 
 "Sister Resin Crafts" -  4th  Milestone Project.
 
 
-
 <h2>Screenshots:</h2>
+
+<img src="screenshots/site(1).png" width="400px">
+<img src="screenshots/site(2).png" width="400px">
+<img src="screenshots/site(3).png" width="400px">
+<img src="screenshots/site(4).png" width="400px">
 
 
 # UX
