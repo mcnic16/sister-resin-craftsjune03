@@ -35,3 +35,13 @@ def edit_rating(request, rating_id):
     return render(request, "ratings/edit_rating.html", context)
 
 
+def delete_rating(request, rating_id):
+    rating = get_object_or_404(Rating, pk=rating_id)
+    if request.method == "POST":
+        rating.delete()
+        return redirect('show_ratings')
+
+    context = {"rating": rating}
+    return render(request, "ratings/delete_rating.html", context)
+
+
