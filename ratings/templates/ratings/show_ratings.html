@@ -33,7 +33,7 @@
               </div>
               <p>Comment: {{ rating.comment }}</p>
               <p>Date: {{ rating.date }}</p>
-              {% if user.is_authenticated %}
+              {% if request.user.is_superuser %}
               <a href="{% url 'edit_rating' rating.id %}" class="btn btn-primary btn-sm">Edit</a>
               <a href="{% url 'delete_rating' rating.id %}" class="btn btn-primary red btn-sm">Delete</a>
               {% endif %}
