@@ -8,9 +8,7 @@ class Query(models.Model):
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
-        ordering = ['name'] 
- 
+        ordering = ["name"]
+
     def __str__(self):
         return f"Form by {self.name}"
-
-

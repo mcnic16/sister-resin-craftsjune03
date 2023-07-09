@@ -14,10 +14,11 @@
 
 
 # UX
-The purpose of this site is to be an e-commerce web application with a fully functional payment system
-and authentication system including email confirmations and user profiles. The superuser of the site will have the ability to create, edit and delete items. A registered user of the site will be able to browse the items and place them in a shopping bag and purchase them.
-It is designed to be responsive for mobile, tablet and work on all modern browers.
-The target audience for this site is for people who like something different from the normal, such as slasher coasters.
+The purpose of this site is to be an e-commerce web application with a fully functional payment system and authentication system, including email confirmations and user profiles. The superuser of the site will have the ability to create, edit, and delete items and ratings. A registered user of the site will be able to browse the items, place them in a shopping bag, and make purchases.
+
+The site is designed to be responsive for mobile and tablet devices and compatible with all modern browsers.
+
+The target audience for this site is people who appreciate something different from the norm, such as slasher coasters.
 
 # User Stories
 The goals of the business are:
@@ -31,7 +32,7 @@ The goals of the business are:
 
 
 As a customer I want to:
-1.   Learn the background of the company.
+1.   Learn the background of the company
 2.   For the site to be user friendly and easy to navigate
 3.   View a list of products
 4.   View details of each product
@@ -50,21 +51,25 @@ As a customer I want to:
 
 As a returning customer I want:
 1.  To see the website has been updated and what new items are available
-2.  To easily find any promotional offers available including sales.
+2.  To easily find any promotional offers available including sales
 3.  To be able to contact company directly with any queries or customer order
 
 
-
-
 # Design
+The goal was to create a e-commerce website that is overall user friendly and easy to navigate.
+Here are my design choices:
 
 ## Framework
+I chose Bootstrap for the front-end framework for this project. JQuery was used for initializing some elements.
 
 ## Colour Scheme
+The main colour scheme of the site is a light purple, orange effect.
 
 ## Typography
+The font used is Playfair Display, serif
 
 ## Icons
+I used FontAwesome as the main icon library across the project
 
 ## Wireframes
 
@@ -79,6 +84,7 @@ Home page:
 ## Features
 
 
+
 # Technologies Used
 Django
 allauth==0.41.0 
@@ -86,30 +92,147 @@ Pillow
 Crispy Forms
 Stripe
 django-countries
+gunicorn
 
 ## Front-End
-
+HTML
+CSS 
+Javascript
 
 ## Back-End
+Python 3.8.2 
+Django
+Heroku 
+AWS
 
 ## Libraries
-
+Bootstrap 4.4.1  - for front front-end framework. FontAwesome - to provide icons used across the project.
 
 ## Testing
+
+### User Stories
+
+The business aims to achieve the following objectives:
+
+1. Increase social media-driven traffic:
+
+The footer of the website contains links to various social media platforms, including Etsy and Instagram. In the future, these platforms will also feature links directing users to our website.
+
+2. Generate more content:
+
+As a superuser, you possess the ability to utilize CRUD functionality to manage products and reviews, allowing for the creation of engaging and informative content.
+
+3. Enhance customer satisfaction:
+
+While browsing the site does not require registration, registered users gain access to their purchase history and the ability to leave reviews, thereby fostering a sense of satisfaction and engagement.
+
+4. Foster customer loyalty:
+
+Through the user-friendly nature of the site and its potential for offering additional products, customers will be incentivized to revisit the website, fostering loyalty and repeat business.
+
+5. Expand online presence:
+
+Future plans involve incorporating additional social media platforms and establishing interconnectedness with the website, expanding our online reach and visibility.
+
+6. Achieve growth:
+
+The website's growth will be fueled by increased customer traffic, regular updates, and the integration of more social media platforms.
+
+7. Cultivate a positive reputation to attract new customers:
+
+Ensuring the satisfaction of existing customers with both the products and the website is crucial for building a reputable brand image. A strong reputation will attract potential new customers and stimulate further growth.
+
+
+As a customer, my expectations and requirements are as follows:
+
+1. Access comprehensive company background information:
+
+Detailed information about the company's background can be conveniently found on the homepage by clicking the "Sister Resin Crafts" link.
+
+2. Seamless user experience and intuitive navigation:
+
+The website ensures user-friendliness and easy navigation. On the homepage, links are provided in both the navbar and footer. On mobile devices, simply click on the menu icon (represented by three bars) to access the links.
+
+3. Browse a well-organized product catalog:
+
+The website offers a categorized product catalog comprising three sections: Coasters, Other Items, and Seasonal. Currently, the seasonal section is focused on Christmas but will be regularly updated in the future.
+
+4. Obtain detailed product information:
+
+By clicking on a product, you gain access to comprehensive details and specifications.
+
+5. Easily find and take advantage of special offers:
+
+Although no special offers are currently available, the website will be promptly updated once such offers are introduced.
+
+6. Keep track of personal spending:
+
+Registered users can conveniently view their previous purchases by clicking on "My Profile."
+
+7. Effortlessly register and log in/out:
+
+To register an account, simply click on "Account" and select "Register." Once registered, you will be automatically logged in. For subsequent logins, click on "Login" in the same section.
+
+8. Understand the refund policy and terms and conditions:
+
+The refund policy and terms and conditions can be accessed by clicking on the "Queries/T&C" link in the navbar.
+
+9. Recover a forgotten password:
+
+Password recovery functionality is currently not available but will be implemented in the future.
+
+10. Easily locate reviews and ratings from other customers:
+
+To leave a review, log in to your account, select the desired product, and submit your review on the product detail page. All customer reviews will be displayed on the reviews page.
+
+11. Receive email confirmations after registration and placing an order:
+
+While there may be server-related issues preventing email confirmations for registration, an email confirmation will be sent once you have successfully completed a purchase.
+
+12. Perform item searches effortlessly:
+
+To search for a specific item, simply enter the desired keyword(s) in the search bar.
+
+13. void disruptive pop-ups:
+
+The website ensures a pop-up-free browsing experience for smooth navigation.
+
+14. Facilitate easy item purchases:
+
+To purchase an item, select the relevant product and click on "Add to Bag." When finished shopping, proceed to the bag and click on "Secure Checkout" to enter your details and complete the order.
+
+15. Conveniently access social media links:
+
+Social media links are conveniently located in the footer for easy access and navigation.
+
+
+As a returning customer, my expectations and desires are as follows:
+
+1. Stay informed about website updates and new product offerings:
+
+The website will be regularly updated to showcase new items as they become available.
+
+2. Easily locate and take advantage of promotional offers, including sales:
+
+Future plans include implementing promotional offers on the website, allowing you to conveniently access and benefit from special deals.
+
+3. Have direct communication with the company for any queries or customer orders:
+
+To contact the company directly, simply click on "Queries/T&C." At the bottom of the page, you will find a link to submit your queries, ensuring prompt and efficient communication with the company.
 
 
 ### HTML validator
 [W3C Markup Validator](https://validator.w3.org/)
-All screenshots for testing can be seen in the test folder.
+All screenshots for testing can be seen in the test folder
+The html links failed due to jinja template.
 
 
 
 ### CSS validator
 [W3C Markup Validator](https://jigsaw.w3.org/css-validator
+Screenshots of the CSS files can be found in the CSS folder in tests
 
 
-### PEP8 validator
-[W3C Markup Validator](https://www.pythonchecker.com/)
 
 
 # Compatibility and Responsiveness
