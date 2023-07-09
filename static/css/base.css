@@ -278,7 +278,7 @@ input[name='q']::placeholder {
     }
 
     .reg-header-container {
-        padding-top: 250px;
+        padding-top: 250px; 
     }
 }
 

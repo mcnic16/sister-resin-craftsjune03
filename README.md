@@ -236,8 +236,11 @@ Screenshots of the CSS files can be found in the CSS folder in tests
 Python code was checked with Black
 
 # Compatibility and Responsiveness
+The site has been checked on tablet, laptop and PC
+Browsers that have been used to check the site are Chrome, Edge, Firefox and Opera
 
 # Bugs
+When you register there is no confirmation email due to server 500 errors, so I have turned ACCOUNT_EMAIL_VERIFICATION  to none in the settings.
 
 # Deployment
 
@@ -434,6 +437,23 @@ class StaticStorage(S3Boto3Storage):
 
 class MediaStorage(S3Boto3Storage):
     location = settings.MEDIAFILES_LOCATION
+
+3. Go to settings.py, above the stripe section type:
+ # Static and media files
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    STATICFILES_LOCATION = 'static'
+    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+    MEDIAFILES_LOCATION = 'media'
+
+    # Override static and media URLs in production
+    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/
+
+4.
+
+
+
+
 
 
 
