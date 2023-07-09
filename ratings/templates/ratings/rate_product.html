@@ -13,35 +13,36 @@
 {% endblock %}
 
 {% block content %}
-<div class="col md-6 row text-center review">
-    <h3 class="my-3">Reviews<i class="fa fa-star text-warning"></i>
-        <i class="fa fa-star text-warning"></i>
-        <i class="fa fa-star text-warning"></i>
-        <i class="fa fa-star text-warning"></i>
-        <i class="fa fa-star text-warning"></i>
+<div class="col-md-6 text-center review">
+    <h3 class="my-3">Reviews
+      <i class="fa fa-star text-warning"></i>
+      <i class="fa fa-star text-warning"></i>
+      <i class="fa fa-star text-warning"></i>
+      <i class="fa fa-star text-warning"></i>
+      <i class="fa fa-star text-warning"></i>
     </h3>
     <div class="card">
-        <div class="card-body ratings-card">
-            <p>Please leave a review here:</p>
-            <form method="post" action="{% url 'rate_product' product_id %}">
-                {% csrf_token %}
-                <label for="stars">Rating:</label>
-                <select name="stars" id="stars">
-                    <option value="1">1 star</option>
-                    <option value="2">2 stars</option>
-                    <option value="3">3 stars</option>
-                    <option value="4">4 stars</option>
-                    <option value="5">5 stars</option>
-                </select>
-                <br>
-                <label for="comment">Comment:</label>
-                <textarea name="comment" id="comment" rows="4" cols="50"></textarea>
-                <br>
-                <input type="submit" value="Submit">
-            </form>
-
-        </div>
+      <div class="card-body ratings-card">
+        <p>Please leave a review here:</p>
+        <form method="post" action="{% url 'rate_product' product_id %}">
+          {% csrf_token %}
+          <div class="form-group">
+            <label for="stars">Rating:</label>
+            <select name="stars" id="stars" class="form-control">
+              <option value="1">1 star</option>
+              <option value="2">2 stars</option>
+              <option value="3">3 stars</option>
+              <option value="4">4 stars</option>
+              <option value="5">5 stars</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="comment">Comment:</label>
+            <textarea name="comment" id="comment" rows="4" class="form-control"></textarea>
+          </div>
+          <input type="submit" value="Submit" class="btn btn-primary">
+        </form>
+      </div>
     </div>
-</div>
-</div>
+  </div>
 {% endblock %}
