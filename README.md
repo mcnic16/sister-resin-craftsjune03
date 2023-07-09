@@ -232,8 +232,8 @@ The html links failed due to jinja template.
 [W3C Markup Validator](https://jigsaw.w3.org/css-validator
 Screenshots of the CSS files can be found in the CSS folder in tests
 
-
-
+### Python validator
+Python code was checked with Black
 
 # Compatibility and Responsiveness
 
