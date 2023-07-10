@@ -2,6 +2,7 @@ from django.db import models
 
 
 class Query(models.Model):
+    """ A form to leave a query """
     name = models.CharField(max_length=100)
     email = models.EmailField()
     message = models.TextField()

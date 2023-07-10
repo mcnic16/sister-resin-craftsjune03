@@ -7,6 +7,7 @@ from django.contrib.auth.decorators import login_required
 
 @login_required
 def rate_product(request, product_id):
+    """ A view to rate and review the products """
     product = get_object_or_404(Product, pk=product_id)
     if request.method == "POST":
         stars = int(request.POST.get("stars"))
@@ -18,6 +19,7 @@ def rate_product(request, product_id):
 
 
 def show_ratings(request):
+    """ A view to show the reviews and ratings """
     ratings = Rating.objects.all()
     for rating in ratings:
         rating.stars = [1] * rating.stars
@@ -27,6 +29,7 @@ def show_ratings(request):
 
 @login_required
 def edit_rating(request, rating_id):
+    """ A view to edit the reviews and ratings """
     rating = get_object_or_404(Rating, pk=rating_id)
     if request.method == "POST":
         rating.stars = int(request.POST.get("stars"))
@@ -40,6 +43,7 @@ def edit_rating(request, rating_id):
 
 @login_required
 def delete_rating(request, rating_id):
+    """ A view to delete the reviews and ratings """
     rating = get_object_or_404(Rating, pk=rating_id)
     if request.method == "POST":
         rating.delete()

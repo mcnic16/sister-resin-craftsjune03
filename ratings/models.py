@@ -4,6 +4,7 @@ from profiles.models import UserProfile
 
 
 class Rating(models.Model):
+    """ To leave a review or rating """
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     stars = models.IntegerField(default=0)
     comment = models.TextField()

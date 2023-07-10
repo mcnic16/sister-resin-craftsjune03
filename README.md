@@ -44,7 +44,7 @@ As a customer I want to:
 10.  Reviews and ratings from other customers to be easy to locate
 11.  To recieve email conformation after registration and after an order
 12.  Search for an item
-13.  Not to have annoying pop ups
+13.  Avoid disruptive pop-ups
 14.  Easy to purchase Items
 15.  Easy navigation to Social Media links
 
@@ -87,8 +87,11 @@ Home page:
 
 # Technologies Used
 Django
-allauth==0.41.0 
+
+allauth==0.41.0
+
 Pillow
+
 Crispy Forms
 Stripe
 django-countries
@@ -96,13 +99,18 @@ gunicorn
 
 ## Front-End
 HTML
+
 CSS 
+
 Javascript
 
 ## Back-End
 Python 3.8.2 
+
 Django
+
 Heroku 
+
 AWS
 
 ## Libraries
@@ -193,7 +201,7 @@ While there may be server-related issues preventing email confirmations for regi
 
 To search for a specific item, simply enter the desired keyword(s) in the search bar.
 
-13. void disruptive pop-ups:
+13. Avoid disruptive pop-ups:
 
 The website ensures a pop-up-free browsing experience for smooth navigation.
 
@@ -223,17 +231,17 @@ To contact the company directly, simply click on "Queries/T&C." At the bottom of
 
 ### HTML validator
 [W3C Markup Validator](https://validator.w3.org/)
-All screenshots for testing can be seen in the test folder
+All screenshots for testing can be seen in the test folder.
 The html links failed due to jinja template.
 
 
 
 ### CSS validator
 [W3C Markup Validator](https://jigsaw.w3.org/css-validator
-Screenshots of the CSS files can be found in the CSS folder in tests
+Screenshots of the CSS files can be found in the CSS folder in tests.
 
 ### Python validator
-Python code was checked with Black
+Python code was checked with Black which I installed in Gitpod.
 
 # Compatibility and Responsiveness
 The site has been checked on tablet, laptop and PC
@@ -271,25 +279,39 @@ Gitpod
     import os
     import dj_database_url
 4. Scroll to the DATABASES section and update it to the following code, so that the original connection to sqlite3 is commented out and we connect to the new ElephantSQL database instead:
-    # DATABASES = {
-    #     'default': {
-    #         'ENGINE': 'django.db.backends.sqlite3',
-    #         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    #     }
-    # }
      
+     DATABASES = {
+
+         'default': {
+
+           'ENGINE': 'django.db.backends.sqlite3',
+
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
+    
+    Make sure the code above has a hashtag at the start of everyline.
+
     DATABASES = {
+
      'default': dj_database_url.parse('your-database-url-here')
+
     }
 
 5. In the terminal, type python3 manage.py showmigrations
 6. Migrate the database models to the new database using python3 manage.py migrate
-7. Load in the fixtures, categories first.
+7. Load in the fixtures, categories first:
+
     python3 manage.py loaddata categories
+
     python3 manage.py loaddata products
+
 8. Create a superuser for your new database
+
     python3 manage.py createsuperuser
+
 9. Delete database from settings.py and reconnect to the local sqlite database.
+
     DATABASES = {
      'default': {
          'ENGINE': 'django.db.backends.sqlite3',
@@ -307,21 +329,33 @@ Gitpod
 
 1. In settings.py change this line to ACCOUNT_EMAIL_VERIFICATION = 'none'.
 2. Change database in settings to an if statement:
+
     if 'DATABASE_URL' in os.environ:
+
     DATABASES = {
+
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+
     }
 else:
+
     DATABASES = {
+
         'default': {
+
             'ENGINE': 'django.db.backends.sqlite3',
+
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+
         }
+
     }
 3. Install gunicorn in the terminal : pip3 install gunicorn
 4. pip freeze > requirements.txt
 4. Create a Procfile o tell Heroku to create a web dyno.
+
     web: gunicorn sisterresincrafts.wsgi:application
+
 5. Install Heroku in the terminal: npm i -g heroku
 
 Heroku
@@ -332,140 +366,247 @@ Gitpod
 2. Type in your email address, and when prompted for your password, right-click and select paste in  the API key.
 3. Type 'heroku config:set DISABLE_COLLECTSTATIC=1 -a sister-resin-crafts' in the terminal.
 4. Add the hostname of our Heroku app to allowed hosts in settings.py
+
     ALLOWED_HOSTS = ['sister-resin-crafts.herokuapp.com',
                 '8000-mcnic16-sisterresincraf-dekxparl9be.ws-eu101.gitpod.io']
+
 5. Type 'heroku git:remote -a sister-resin-crafts' in the terminal
+
 6. git add, git commit, git push then git push heroku main
 
 Heroku
+
 1. On the deploy tab set it to connect to github.
+
 2. Search for my repository (sister-resin-craftsjune03) and then click connect.
+
 3. Enable automatic deploys.
+
 4. Generate a random secret key number.
+
 5. In the config vars add SECRET_KEY with the new number
 
 GitPod
+
 1. Change the following variables in settings:
+
     SECRET_KEY = os.environ.get('SECRET_KEY', '') 
+
     DEBUG = 'DEVELOPMENT' in os.environ
 
 AWS amazon services
+
 1. Search for s3, in s3 create a bucket.
+
 2. Type in the name for the bucket (sister-resin-craftsjune03)
+
 3. aws region = London
+
 4. Enable ecl
+
 5. untick Block all public access
+
 6. Click on Create Bucket
+
 7. click on bucket :sister-resin-craftsjune03
+
 8. Go to properties  and click on static website hosting 
+
 9. For the index and error document, we can just fill in some default values since they won't be used in this case and then click save.
+
 10. On the permissions tab paste in a coors configuration:
+
     [
+
 {
+
 "AllowedHeaders": [
+
 "Authorization"
+
 ],
+
 "AllowedMethods": [
+
 "GET"
 ],
+
 "AllowedOrigins": [
+
 "*"
+
 ],
+
 "ExposeHeaders": []
+
 }
+
 ]
+
 11. The Bucket Policy is unchanged. For the Access control list (ACL) section, click edit and enable List for Everyone (public access) and accept the warning box. 
+
 12. Click on Bucket Policy and Policy generator
+
 13. Select Type of Policy - s3 bucket policy
+
 14. Allow all principals by using *
+
 15. For the action select get object
+
 16. Copy the ARN which stands for Amazon resource name from the other tab and paste it into the     ARN box here at the bottom.
+
 17. Click Add statement.
+
 18. Click generate policy.
+
 19. Copy this policy into the bucket policy editor.
+
 20. Add a /* here onto the end of the resource key and click save.
+
 21. Search for IAM
+
 22. Click on create group
-23. Type in the name of the user group.
+
+23. Type in the name of the user group
+
 24. Click on Create Policy
+
 25. To attach the policy, on the sidebar click User Groups. Select your group, go to the permissions tab, open the Add permissions dropdown, and click Attach policies. Select the policy and click Add permissions at the bottom.
+
 26. In IAM left sidebar click on users, then the username of the user you have just created
+
 27. Below the user summary click on the tab security credentials
+
 28. Scroll down to access keys and click create access key
+
 29. Here you can create an access key and secret access key and once saved, download the csv file
 
 Gitpod
+
 1. install boto 3 and django storages
+
 2. pip freeze > requirements.txt
+
 3. Put the follow in settings.py:
 
 if 'USE_AWS' in os.environ:
-    # Bucket Config
+
+     Bucket Config
+
     AWS_STORAGE_BUCKET_NAME = 'sister-resin-craftsjune03'
+
     AWS_S3_REGION_NAME = 'eu-west-2'
+
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 
-    # Static and media files
+     Static and media files
     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+
     STATICFILES_LOCATION = 'static'
+
     DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+
     MEDIAFILES_LOCATION = 'media'
 
-    # Override static and media URLs in production
+     Override static and media URLs in production
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
 
 Heroku
 
 1. Add: AWS_ACCESS_KEY_ID to the convig vars, and also AWS_SECRET_ACCESS_KEY with the variables in the csv file.
+
 2. Add USE_AWS and set it to true.
+
 3. remove the disable collectstatic variable.
 
 gitpod
 
 1. Add a newfile custom_storages.py
+
 2. Add the following code:
+
 from django.conf import settings
+
 from storages.backends.s3boto3 import S3Boto3Storage
 
 
 class StaticStorage(S3Boto3Storage):
+
     location = settings.STATICFILES_LOCATION
 
 
 class MediaStorage(S3Boto3Storage):
+
     location = settings.MEDIAFILES_LOCATION
 
 3. Go to settings.py, above the stripe section type:
+
  # Static and media files
+
     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+
     STATICFILES_LOCATION = 'static'
+
     DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+
     MEDIAFILES_LOCATION = 'media'
 
     # Override static and media URLs in production
+
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/
 
-4.
+4. Add the following code above the aws bucket config
+
+    if 'USE_AWS' in os.environ:
+
+    Cache control
+
+    AWS_S3_OBJECT_PARAMETERS = {
+
+        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+
+        'CacheControl': 'max-age=94608000',
+    }
+
+5. Commit changes
+
+AWS
+
+1. Go to s3, create a new folder called media to go along with the static folder
+
+2. Click upload, add files and select the files you wish to upload
+
+3. Click on grant public access to these objects
+
+4. Click Upload
+
+Heroku
+
+1. Add the stripe keys to the conifig vars, they keys can be found by clicking developers, then API keys in Stripe.
+
+Stripe
+
+1. Go to webhooks in the developers menu and create a new webhook endpoint
+
+2. Add the URL for the Heroku app, followed by /checkout/wh/  
+
+(https://sister-resin-craftsjune03-26aff5e95fce.herokuapp.com/checkout/wh/ )
+
+3. Add all events and add endpoint , and then we can  reveal our webhooks signing secret.
 
 
+Heroku
 
-
-
-
-
-
-
-
-
-
-
-
-
-    
+1. Add the webhooks signing secret to config vars.
 
 # Credits
 
+I would like to thank my mentor, Tutor support and Student support for there help and support throughout this course and project

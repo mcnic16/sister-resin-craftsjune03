@@ -5,6 +5,7 @@ from .forms import QueryForm
 
 
 class SubmitQueryView(View):
+    """ A view to submit a query """
     def get(self, request):
         query_form = QueryForm()
         return render(
